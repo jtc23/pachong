@@ -1,0 +1,115 @@
+@import "/src/global.less";
+
+.Empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 58vh;
+
+    p {
+        margin-top: 10px;
+    }
+}
+
+.see {
+    height: 24px;
+    color: blue !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+    background: var(--system-main-color);
+    border-radius: 2px;
+}
+
+.class {
+    display: flex;
+    justify-content: center;
+}
+
+.even {
+    background: #fff;
+
+    :global {
+        .operation {
+            background: #fff;
+        }
+    }
+}
+
+.odd {
+    background: #e5e5e5;
+
+    :global {
+        .operation {
+            background: #e5e5e5;
+        }
+    }
+}
+
+:global {
+    //.ant-table-cell-fix-left{
+    //  background: none;
+    //}
+
+    .ant-table-content .ant-table-tbody {
+        .ant-table-column-sort {
+            background: none;
+        }
+
+        .ant-table-placeholder {
+            background: none;
+        }
+    }
+}
+.table {
+    :global {
+        .ant-pro-card-body {
+            // margin-top: 14px;
+            padding: 0;
+            tr > td > span{
+                width: 100%;
+                display: -webkit-box !important;
+                -webkit-line-clamp: 2 !important;
+                -webkit-box-orient: vertical !important;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: pre-wrap;
+            }
+        }
+        .ant-table-thead {
+            tr > th {
+                color: #fff;
+               // background-color: #EDF9FF ;
+                background-color:var(--system-primary-color)
+            }
+        }
+    }
+}
+.text_align_left {
+    text-align: left;
+}
+.text_align_center {
+    text-align: center;
+}
+.empty{
+    width: 100%;
+    padding: 100px;
+    text-align: center;
+    span{
+        opacity: 0.5;
+    }
+}
+.noresult{
+    width: 600px;
+    height: 250px;
+    background: url("/home_img/noresult.png") center no-repeat;
+    margin: 0 auto;
+}

@@ -1,0 +1,196 @@
+@import "/src/global.less";
+.mangerlayout{
+    :global{
+        .ant-layout-header{
+         background-color: #fff !important;   
+        }
+        .ant-layout-sider-children{
+            background-color: #fff !important; 
+            padding: 0 !important;
+        }
+        .ant-pro-sider-logo{
+            border-block-end:none;
+        }
+        // .ant-menu{
+        //     color: #fff !important;
+        // }
+        .ant-pro-page-container-children-container{
+            padding: 0 !important;
+        }
+        .ant-pro-top-nav-header-main-left{
+            padding: 0 64px;
+      
+         
+            h1{      
+                    font-size: 20px;
+                   color: #fff !important;
+            }
+        }
+        .ant-pro-top-nav-header-main{
+            background-color: var(--system-primary-color);
+            color: #fff !important;
+        }
+        header{
+            height: 60px !important;
+        }
+        .ant-pro-top-nav-header-menu{
+            padding: 0;
+        }
+        .ant-menu {
+            color: #fff !important;
+            padding-top: 20px;
+            height: 100%;
+            .ant-menu-item {
+                display: flex;
+                align-items: center;
+                margin: 0 !important;
+                width: 100%;
+                border-radius: 0;
+                color: black ;
+                font-size: 18px;
+                padding: 0 !important;
+            }
+         
+
+        }
+
+
+        .ant-layout-content{
+            padding: 10px 16px;
+            background-color: #EDF9FF;
+            height: calc(100vh - 60px);
+            width: calc(100vw - 242px);
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+//  .path_active{
+//     &::after{
+//         position: absolute;
+//         bottom: -2px;
+//         left: 50%;
+//         z-index: 10;
+//         display: block;
+//         box-sizing: content-box;
+//         width: 64px;
+//         height: 0;
+//         padding: 0;
+//         border-bottom: 4px solid #fff;
+//         transform: translate(-50%,-50%);
+//         content: "";
+//     }
+//  }
+.menus_item{
+    padding: 0 0 0 34px;
+    background-color:white;
+   
+}
+.pathActive{
+    background-color: var(--system-primary-color) !important;
+    color: white;
+}
+}
+.toBottom{
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    // background: url("/greenbussiness/bottom.png") no-repeat center;
+}
+.visible{
+    display: none;
+}
+
+.headers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #fff !important;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.logo {
+    display: flex;
+    h2{
+            font-weight: bold;
+            color: rgba(16, 16, 16, 1);
+            font-size: 20px;
+            margin-right: 77px;
+    }
+   span{
+    font-size: 14px;
+    color: #101010 ;
+   }
+    padding: 0 2rem;
+    img {
+        height: 40px;
+    }
+}
+.content {
+    flex: 1;
+
+    .time {
+        color: var(--main-font-color);
+        font-size: 16px;
+    }
+}
+
+.users {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+
+    .auth {
+        display: flex;
+        align-items: center;
+    }
+
+    .avatar {
+        margin-right: 16px;
+    }
+
+    .user_name {
+        // color: var(--main-font-color);
+        font-size: 16px;
+    }
+}
+:global {
+    .overlayClass {
+        min-width: 120px !important;
+    }
+}
+.item {
+    padding: 0 14px;
+}
+.menuHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0;
+    font-size: 20px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.user{
+    margin-right: 24px;
+    height: 40px;
+}
+:global {
+    .ant-pro-sider-logo {
+        padding: 0;
+        cursor: initial;
+    }
+}

@@ -1,0 +1,72 @@
+
+
+.list{
+    
+}
+
+.list_item{
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    width: 390px;
+    height:80px;
+    justify-content: space-between;
+    padding: 0 13px;
+    background: linear-gradient(90deg, rgba(87,101,227,0.43) 0%, rgba(10,224,255,0) 100%);
+    border-radius: 40px 0 0 40px;
+}
+.icon{
+    width: 56px;
+    height: 56px;
+    background: url('/icon/look-bg.webp') no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item_i_t{
+    display: flex;
+    align-items: center;
+}
+.item_name{
+    margin-left: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--font-color);
+    line-height: 23px;
+    letter-spacing: 2px;
+}
+
+.item_values{
+    display: flex;
+    align-items: center;
+    color: var(--font-color);
+
+    :global{
+        .countup{
+            font-weight: 400;
+            line-height: 30px;
+            text-shadow: -2px 4px 12px rgba(226,255,221,0.63);
+            background: linear-gradient(180deg, #FFFFFF 0%, #80FFB3 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 30px;
+        }
+        .countupwarn{
+            font-weight: 400;
+            line-height: 30px;
+            text-shadow: -2px 4px 12px rgba(254, 82, 28, 0.8);
+            background: linear-gradient(180deg, #FE521C 0%, #FFA857 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 30px;
+        }
+    }
+}
+.item_value{
+    margin-right: 10px;
+}
+.item_unit{
+    position: relative;
+    top:4px;
+}

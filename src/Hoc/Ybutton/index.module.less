@@ -1,0 +1,69 @@
+@import "/src/global.less";
+
+.y_edit {
+    color: #101010  !important;
+    background: #fff !important;
+    border: 1px solid #ccc !important;
+}
+
+.y_error {
+    color: #e46d59 !important;
+    background: #fff !important;
+    border: 1px solid #e46d59 !important;
+}
+
+@downloadbg: #ffcb01;
+@exportbg: #5ac8fa;
+@detele: #e46d59;
+
+.y-download {
+    color: #fff;
+    background-color: @downloadbg;
+    border-color: @downloadbg;
+
+    &:focus,
+    &:hover {
+        color: #fff;
+        background-color: @downloadbg;
+        border-color: @downloadbg;
+    }
+}
+
+.y-export {
+    color: #fff;
+    background-color: @exportbg;
+    border-color: @exportbg;
+
+    &:focus,
+    &:hover {
+        color: #fff;
+        background-color: @exportbg;
+        border-color: @exportbg;
+    }
+}
+
+.y-import {
+    color: @exportbg;
+    background-color: #fff;
+    border-color: @exportbg;
+
+    &:focus,
+    &:hover {
+        color: @exportbg;
+        background-color: #fff;
+        border-color: @exportbg;
+    }
+}
+
+.y-delete {
+    color: @detele;
+    background-color: #fff;
+    border-color: @detele;
+
+    &:focus,
+    &:hover {
+        color: @detele;
+        background-color: #fff;
+        border-color: @detele;
+    }
+}

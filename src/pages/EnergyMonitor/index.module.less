@@ -1,0 +1,129 @@
+.search{
+    background-color: #FFF;
+    border-radius: 11px;
+    margin-top:16px;
+    padding: 10px 0;
+    padding-left: 32px;
+}
+.table{
+    background-color: #FFF;
+    margin-top: 21px;
+    border-radius: 11px;
+    padding: 45px 46px;
+    min-height: calc(100vh - 200px);
+}
+.view{
+    min-height: calc(100vh - 100px);
+    background-color: #FFF;
+    border-radius: 11px;
+}
+.pointor{
+    cursor: pointer;
+    color: var(--system-primary-color);
+}
+.back_button{
+    margin: 12px 0 21px 23px;
+    border: 1px solid rgba(187, 187, 187, 1) !important;
+    width: 80px ;
+    color: black !important;
+}
+.viewcontent{
+    padding: 20px 20px 0 20px;
+    .content{
+        flex:1;
+    }
+    .left{
+        padding-top: 21px;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+    }
+    .right{
+        padding-top: 21px;
+        // width: 150px;
+        display: flex;
+        align-items: center;
+    }
+    .choose_button{
+        width: 65px;
+        height: 30px;
+        border: 1px solid rgba(187, 187, 187, 1);
+        text-align: center;
+        line-height: 30px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 24px;
+    }
+    .choose_button_active{
+        background-color: rgba(64, 149, 229, 1);
+        color: rgba(255, 255, 255, 1);
+        border: none;
+    }
+
+    .title_sub{
+        text-indent: 1em;
+        padding: 2px;
+        font-size: 18px;
+        font-weight: bold;
+        border-left: 4px solid var(--system-primary-color);
+    }
+}
+.view_datas{
+    // width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    .view_datas_card{
+        flex: 1;
+        height: 100px;
+        border-radius: 10px;
+        margin-right: 20px;
+        border: 1px solid #ccc;
+        &:last-child{
+            margin-right: 0;
+        }
+        h4{
+            margin-top: 10px;
+            font-size: 14px;
+            position: relative;
+            text-indent: 1em;
+            border-left: 4px solid var(--system-primary-color);
+        }
+        .view_datas_item{
+            display: inline-flex;
+            width: 100%;
+            padding: 20px 1em;
+            span{
+                flex: 1;
+                width: 50%;
+                text-overflow:ellipsis;
+                overflow-x: hidden;
+            }
+            .view_datas_span_first{
+                // text-align: center;
+            }
+        }
+    }
+}
+.trend_icon_rise{
+    color: red;
+    margin-left: 15px;
+    position: absolute;
+    top: 4px;
+}
+.trend_icon_down{
+    color: green;
+    margin-left: 15px;
+    position: absolute;
+    top: 4px;
+}
+.map{
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+}
+.chart{
+    padding: 0;
+}

@@ -1,0 +1,42 @@
+
+.tabs_container,.tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.time{
+    position: absolute;
+    display: flex;
+    right: 33px;
+    top: 10px;
+    font-size: 20px;
+    color: #6C7D8D;
+
+    >div{
+        font-family: 'LCD-Bold',sans-serif;
+    }
+    .time_date{
+        margin-right: 36px;
+    }
+}
+.tabs_item{
+    margin: 0 28px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #129BFF;
+    cursor: pointer;
+    user-select: none;
+}
+
+.active{
+    color:var(--sytem-color);
+}
+
+.tab_base{
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(72,255,255,0) 0%, #48FFFF 49%, rgba(72,255,255,0) 100%);
+    top: 42px;
+}

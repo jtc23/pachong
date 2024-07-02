@@ -1,0 +1,43 @@
+@import "/src/global.less";
+
+.MangerListComponent {
+    width: 100%;
+    padding: 0 60px;
+    background: #fff;
+    border-radius: 4px;
+    .innerhtml {
+        padding: 10px 40px;
+        // border-top: 1px solid #ccc;
+    }
+    .tips {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        a {
+            color: #ccc;
+        }
+    }
+}
+.link {
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 0;
+    a {
+        line-height: 20px;
+        text-decoration: underline;
+    }
+    .collect {
+        display: flex;
+        justify-content: space-between;
+        line-height: 20px;
+        > div {
+            display: inline;
+            margin-left: 46px;
+            cursor: pointer;
+            .like {
+                margin-right: 5px;
+                color: var(--system-title-color);
+            }
+        }
+    }
+}

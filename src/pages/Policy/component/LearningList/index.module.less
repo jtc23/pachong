@@ -1,0 +1,27 @@
+@import "/src/global.less";
+.Empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 58vh;
+
+    p {
+        margin-top: 10px;
+        min-width: 250px;
+        text-align: left;
+    }
+    img {
+        width: 450px;
+        opacity: 0.3;
+    }
+}
+.quickjumper {
+    position: absolute;
+    right: 300px;
+    bottom: 48px;
+}
+
+:global(.ant-pagination-options-quick-jumper) {
+    display: none;
+}

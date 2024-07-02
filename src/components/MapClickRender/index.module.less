@@ -1,0 +1,100 @@
+
+
+.body{
+    width: 512px;
+    height: 261px;
+    // background: rgba(10,16,28,0.9);
+    border: 1px solid #095E9B;
+    position: relative;
+    cursor: default;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 10px 8px 0 8px;
+}
+
+.mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(10,16,28,0.9);
+    filter: blur(1px);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 21px;
+    height: 21px;
+    // 三角形
+    &:after{
+        content: ' ';
+        position: absolute;
+        right: 0;
+        bottom: 2px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid #3598E2;
+        border-top: 10px solid #3598E2;
+        border-bottom: 10px solid transparent;
+        font-size: 24px;
+        top: 0;
+        visibility: initial;
+    }
+
+    .close_icon{
+        font-size: 18px;
+        position: relative;
+        top: -8px;
+        z-index: 999;
+        left: 5px;
+        font-family: none;
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.container{
+    display: flex;
+    // align-items: center;
+    position: relative;
+    margin-bottom: 8px;
+
+    &::after{
+        content: ' ';
+        position: absolute;
+        width: 494px;
+        height: 5px;
+        background: url(/imgs/decorate.webp) no-repeat;
+        bottom: -4px;
+    }
+}
+
+.home{
+    width: 14px;
+    height: 14px;
+    background: url(/icon/home.webp) no-repeat;
+    vertical-align: middle;
+}
+
+.title{
+    font-weight: 400;
+    color: #AEECFF;
+    line-height: 16px;
+    text-shadow: 0px 0px 9px #159AFF;
+    margin-left: 4px;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background: url(/imgs/surbase.webp) no-repeat;
+    margin-top: 12px;
+}

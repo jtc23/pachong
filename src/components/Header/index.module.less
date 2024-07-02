@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    height: 110px;
+    background: url("/imgs/header-title.webp") no-repeat;
+    text-align: center;
+    line-height: 85px;
+
+    div {
+        font-size: 50px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        // text-shadow: 0px 4px 4px #02274C;
+        background: linear-gradient(180deg, #4cc4ff 0%, #cff3ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    div::before {
+        content: attr(data-set-content);
+        position: absolute;
+        z-index: -1;
+        text-shadow: 0px 2px #000;
+    }
+}

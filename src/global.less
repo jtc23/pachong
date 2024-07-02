@@ -1,0 +1,232 @@
+
+@screen-xs:1440px;
+html,
+body,
+#root {
+    height: 100%;
+    font-family: Noto Sans SC;
+}
+@system-main-color: #49ab73;
+@menu_select_color: #49ab74;
+@system-primary-color: #1E80FF;
+@default_color: #1E80FF;
+:root {
+    --main-font-color: #fff;
+    // --ant-primary-color: #49ab73;
+    --ant-primary-color-hover: #49ab74;
+    --ant-primary-color-active: #49ab74;
+    --ant-primary-color-outline: rgba(73, 171, 116, 0.2);
+    --ant-primary-1: #e6f7ff;
+    --ant-primary-2: #bae7ff;
+    --ant-primary-3: #91d5ff;
+    --ant-primary-4: #69c0ff;
+    --ant-primary-5: #49ab74;
+    --ant-primary-6: #49ab74;
+    --ant-primary-7: #096dd9;
+    --ant-primary-color-deprecated-l-35: #cbe6ff;
+    --ant-primary-color-deprecated-l-20: #7ec1ff;
+    --ant-primary-color-deprecated-t-20: #46a6ff;
+    --ant-primary-color-deprecated-t-50: #8cc8ff;
+    --ant-primary-color-deprecated-f-12: rgba(24, 144, 255, 0.12);
+    --ant-primary-color-active-deprecated-f-30: rgba(230, 247, 255, 0.3);
+    --ant-primary-color-active-deprecated-d-02: #dcf4ff;
+    --ant-success-color: #52c41a;
+    --ant-success-color-hover: #73d13d;
+    --ant-success-color-active: #389e0d;
+    --ant-success-color-outline: rgba(82, 196, 26, 0.2);
+    --ant-success-color-deprecated-bg: #f6ffed;
+    --ant-success-color-deprecated-border: #b7eb8f;
+    --ant-error-color: #ed7d31;
+    --ant-error-color-hover: #ff7875;
+    --ant-error-color-active: #d9363e;
+    --ant-error-color-outline: rgba(255, 77, 79, 0.2);
+    --ant-error-color-deprecated-bg: #fff2f0;
+    --ant-error-color-deprecated-border: #ffccc7;
+    --ant-warning-color: #faad14;
+    --ant-warning-color-hover: #ffc53d;
+    --ant-warning-color-active: #d48806;
+    --ant-warning-color-outline: rgba(250, 173, 20, 0.2);
+    --ant-warning-color-deprecated-bg: #fffbe6;
+    --ant-warning-color-deprecated-border: #ffe58f;
+    --ant-info-color: #6fbfbc;
+    --ant-info-color-deprecated-bg: #e6f7ff;
+    --ant-info-color-deprecated-border: #91d5ff;
+    --margin: 24px;
+    --main-width-yoke: 70vw;
+    --main-main-height: calc(100vh - 149px);
+    --register-font-color: #0487ff;
+    --system-main-color: #49ab74;
+    --system-title-color: #328a38;
+    --system-primary-color: #4095E5;
+}
+.ant-btn-default{
+    border: 1px solid var(--system-primary-color);
+    color:var(--system-primary-color);
+}
+.colorWeak {
+    filter: invert(80%);
+}
+
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+    left: unset;
+}
+
+canvas {
+    display: block;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Noto Sans SC;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+h2 {
+    font-size: 24px;
+}
+@media (max-width: @screen-xs) {
+    .ant-table {
+        width: 100%;
+        overflow-x: auto;
+
+        &-thead > tr,
+        &-tbody > tr {
+            > th,
+            > td {
+                white-space: pre;
+
+                > span {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// Compatible with IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+    body .ant-design-pro > .ant-layout {
+        min-height: 100vh;
+    }
+}
+
+// 主题配置
+
+// .ant-btn-default {
+//     color: var(--ant-primary-color);
+//     border: 1px solid var(--ant-primary-color);
+// }
+
+// .page-main {
+//     min-height: var(--main-main-height);
+//     background-color: #fff;
+// }
+
+.ant-btn[disabled] {
+    opacity: 0.4;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.ant-form-item-control-input-content {
+    > div[style="width: max-content; max-width: 100%;"] {
+        width: 100% !important;
+    }
+
+    .ant-pro-form-list-item {
+        display: block !important;
+    }
+}
+.icon {
+    padding: 0 5px;
+    color: var(--register-font-color);
+    font-size: 22px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.disabled {
+    color: #cccc;
+}
+.see {
+    height: 24px;
+    color: blue !important;
+    background-color: transparent !important;
+    border: none !important;
+}		
+.ant-layout-content{
+    padding: 0;
+}										
+:where(.css-dev-only-do-not-override-izyoyn).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected, :where(.css-dev-only-do-not-override-izyoyn).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-selected, :where(.css-dev-only-do-not-override-izyoyn).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected, :where(.css-dev-only-do-not-override-izyoyn).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-selected			
+{
+    color: #FFF;
+}	
+// :where(.css-dev-only-do-not-override-lwcp1s).ant-pro-layout .ant-pro-layout-content{
+//     background-color: #fff;
+// }
+// // 选中的菜单
+// .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected {
+//     span {
+//     }
+//     a .ant-pro-menu-item-title {
+//         display: inline-block;
+//         padding: 6px 18px;
+//         color: #fff;
+//         background-color: @menu_select_color !important;
+//         border-radius: 34px 34px 34px 34px;
+//     }
+// }
+//菜单样式覆盖
+//.ant-pro-sider-menu{
+//  padding: 0 20px;
+//  background: #2f54eb !important;
+//
+//  //当前展开的
+//  .ant-menu-submenu-open{
+//    background: #7cb305;
+//
+//    //当前展开的父级
+//    .ant-menu-submenu-title{
+//      background: red;
+//    }
+//
+//    //展开的子级前的border
+//    .ant-menu-sub{
+//      position: relative;
+//      overflow: hidden;
+//      &::before{
+//        content: '';
+//        display: block;
+//        width: 1px;
+//        height: 100%;
+//        background: red;
+//        position: absolute;
+//        left: 0;
+//        top: -4px;
+//      }
+//    }
+//
+//    //去掉当前选中的样式
+//    .ant-menu-item-selected{
+//      background: transparent;
+//
+//      &::after{
+//        display: none;
+//      }
+//    }
+//  }
+//}
